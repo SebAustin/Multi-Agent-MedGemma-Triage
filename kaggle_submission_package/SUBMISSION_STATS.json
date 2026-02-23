@@ -1,0 +1,15 @@
+{
+  "submission_date": "2026-01-21T16:14:53.816360",
+  "accuracy": "92.86%",
+  "test_cases": 14,
+  "correct": 13,
+  "failed": 1,
+  "category_accuracy": {
+    "EMERGENCY": "100%",
+    "URGENT": "100%",
+    "SEMI-URGENT": "100%",
+    "NON-URGENT": "100%",
+    "EDGE_CASE": "50%"
+  },
+  "critical_flag_detection_rate": "300%"
+}
