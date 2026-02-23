@@ -1,0 +1,9 @@
+{
+  "total_tests": 14,
+  "successful_runs": 14,
+  "overall_accuracy": 0.8571428571428571,
+  "emergency_accuracy": 1.0,
+  "urgent_accuracy": 1.0,
+  "semi_urgent_accuracy": 0.8,
+  "non_urgent_accuracy": 0.6666666666666666
+}
