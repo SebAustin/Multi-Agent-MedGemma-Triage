@@ -185,9 +185,9 @@ CC BY 4.0 - See LICENSE file for details
 ```
 @software{medgemma_triage_2026,
   title={MedGemma AI Medical Triage System},
-  author={Your Team Name},
+  author={Sebastien Henry},
   year={2026},
-  url={https://github.com/your-repo}
+  url={[Repo](https://github.com/SebAustin/Multi-Agent-MedGemma-Triage)}
 }
 ```
 
