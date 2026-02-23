@@ -56,7 +56,7 @@ The system consists of six specialized agents:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone (https://github.com/SebAustin/Multi-Agent-MedGemma-Triage.git)
 cd medgemma-triage-system
 ```
 
