@@ -56,7 +56,7 @@ The system consists of six specialized agents:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/SebAustin/Multi-Agent-MedGemma-Triage.git
+git clone <repository-url>
 cd medgemma-triage-system
 ```
 
@@ -78,9 +78,11 @@ cp .env.example .env
 ```
 
 5. Accept MedGemma Terms of Use:
-- Visit https://huggingface.co/google/medgemma-2b
+- Visit https://huggingface.co/google/medgemma-1.5-4b-it
 - Accept the HAI-DEF Terms of Use
 - Ensure your HF token has access
+
+Optional: Set `MODEL_S3_URI` in `.env` to load the model from S3 instead of Hugging Face (see `config.py`).
 
 ## Quick Start
 
@@ -91,6 +93,8 @@ python demo/app.py
 ```
 
 This will launch a Gradio interface at `http://localhost:7860` where you can interact with the triage system.
+
+**Deploy on Hugging Face Spaces:** You can run the same demo as a [Hugging Face Space](https://huggingface.co/spaces) (no AWS or Docker). Use the root `app.py` as the Space entry point and add your `HF_TOKEN` in the Space secrets. See [docs/DEPLOY_HUGGINGFACE_SPACES.md](docs/DEPLOY_HUGGINGFACE_SPACES.md) for step-by-step instructions.
 
 ### Example Usage
 
@@ -150,11 +154,11 @@ This project is submitted to the **MedGemma Impact Challenge** for:
 - **Main Track**: Overall impact and execution
 - **Agentic Workflow Prize**: Multi-agent workflow innovation
 
-### Deliverables
+### Deliverables & documentation
 
-- **Video Demo**: 3-minute demonstration (see `docs/video_script.md`)
-- **Technical Writeup**: 3-page project description (see `docs/writeup.md`)
-- **Source Code**: This repository with complete documentation
+- **Architecture**: `docs/ARCHITECTURE.md` — technical design
+- **Deploy (HF Spaces)**: `docs/DEPLOY_HUGGINGFACE_SPACES.md` — run the demo on Hugging Face
+- **Highlights**: `docs/PROJECT_HIGHLIGHTS.md` — one-page summary
 
 ## Use Cases
 
@@ -171,7 +175,7 @@ This project is submitted to the **MedGemma Impact Challenge** for:
   - SEMI-URGENT: 100% (5/5)
   - NON-URGENT: 100% (3/3)
   - EDGE_CASE: 50% (1/2)
-- **Critical Flag Detection**: 300% detection rate for life-threatening symptoms
+- **Critical Flag Detection**: 100% detection rate for life-threatening symptoms
 - **Speed**: Average triage time under 5 minutes
 - **Readability**: Patient-friendly output at 8th-grade reading level
 - **Coverage**: Handles emergency, urgent, semi-urgent, and non-urgent cases
@@ -185,9 +189,9 @@ CC BY 4.0 - See LICENSE file for details
 ```
 @software{medgemma_triage_2026,
   title={MedGemma AI Medical Triage System},
-  author={Sebastien Henry},
+  author={Sebastien Henry,
   year={2026},
-  url={[Repo](https://github.com/SebAustin/Multi-Agent-MedGemma-Triage)}
+  url={https://github.com/SebAustin/Multi-Agent-MedGemma-Triage}
 }
 ```
 
